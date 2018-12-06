@@ -449,11 +449,11 @@
         }
 
         // "kartik-v/yii2-widget-touchspin"
-        var $hasTouchSpin = $(widgetOptionsRoot.widgetItem).find('[data-krajee-TouchSpin]');
+        var $hasTouchSpin = $(widgetOptionsRoot.widgetItem).find('[data-krajee-touchspin]');
         if ($hasTouchSpin.length > 0) {
             $hasTouchSpin.each(function() {
-                $(this).TouchSpin('destroy');
-                $(this).TouchSpin(eval($(this).attr('data-krajee-TouchSpin')));
+                //$(this).TouchSpin('destroy');
+                $(this).TouchSpin(eval($(this).attr('data-krajee-touchspin')));
             });
         }
 		
